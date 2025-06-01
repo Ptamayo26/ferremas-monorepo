@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FerremasBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08d694b0b9e0e24bbeb4d772e67cde5abe207a22")]
 [assembly: System.Reflection.AssemblyProductAttribute("FerremasBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FerremasBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

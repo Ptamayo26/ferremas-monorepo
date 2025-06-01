@@ -21,6 +21,9 @@ using System.Security.Claims;
 using Polly;
 using Polly.Extensions.Http;
 using System.Net.Http;
+using Microsoft.AspNetCore.Mvc.Controllers;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using System.Linq;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -141,7 +144,7 @@ builder.Services.AddCors(options =>
 });
 
 // Add Swagger con configuración SOLO para controladores
-// builder.Services.AddEndpointsApiExplorer(); // ← COMENTADO - esto detecta Minimal APIs
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     // Solo UN documento swagger
@@ -191,24 +194,13 @@ builder.Services.AddSwaggerGen(c =>
         if (relativePath.Contains("ferremas-comparison"))
             return false;
         
-        // Solo incluir endpoints reales de controladores
-        return relativePath.StartsWith("api/") && 
-               !relativePath.Contains("v1/docs") &&
-               !relativePath.Contains("health");
+        // Incluir todos los endpoints excepto los específicamente excluidos
+        return !relativePath.Contains("v1/docs");
     });
 
-    // Configuración adicional para evitar detección automática de endpoints
-    c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
-    
-    // Solo procesar controllers definidos explícitamente
-    c.TagActionsBy(api => 
-    {
-        if (api.GroupName != null)
-            return new[] { api.GroupName };
-        
-        var controllerName = api.ActionDescriptor.RouteValues["controller"];
-        return new[] { controllerName ?? "Default" };
-    });
+    // Configuración para nombres de operaciones
+    c.CustomSchemaIds(type => type.FullName);
+    c.CustomOperationIds(apiDesc => apiDesc.RelativePath);
 });
 
 // Configure JWT con configuración mejorada
@@ -340,15 +332,16 @@ app.Use(async (context, next) =>
 // Mapear controladores
 app.MapControllers();
 
-// Endpoint de salud para monitoreo - EXCLUIDO de Swagger
-app.MapGet("/health", () => new
-{
-    status = "healthy",
+// Endpoint de salud para monitoreo
+app.MapGet("/health", () => Results.Ok(new { 
+    status = "healthy", 
     timestamp = DateTime.UtcNow,
     version = "1.0.0",
     environment = app.Environment.EnvironmentName
-})
-.ExcludeFromDescription(); // ← Excluir de Swagger
+}))
+.WithName("Health")
+.WithTags("Health")
+.AllowAnonymous();
 
 // Endpoint para información de la API - EXCLUIDO de Swagger
 app.MapGet("/", () => new

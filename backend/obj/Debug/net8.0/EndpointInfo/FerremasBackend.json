@@ -15,26 +15,27 @@
         "tags": [
           "Auth"
         ],
+        "operationId": "api/Auth/login",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.LoginDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.LoginDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.LoginDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.LoginDTO"
               }
             }
           }
@@ -51,26 +52,27 @@
         "tags": [
           "Auth"
         ],
+        "operationId": "api/Auth/register",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioCreateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioCreateDTO"
               }
             }
           }
@@ -87,26 +89,27 @@
         "tags": [
           "Auth"
         ],
+        "operationId": "api/Auth/reset-password",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/ResetPasswordDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ResetPasswordDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ResetPasswordDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ResetPasswordDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ResetPasswordDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ResetPasswordDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ResetPasswordDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ResetPasswordDTO"
               }
             }
           }
@@ -123,26 +126,27 @@
         "tags": [
           "Auth"
         ],
+        "operationId": "api/Auth/refresh-token",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/RefreshTokenDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.RefreshTokenDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RefreshTokenDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.RefreshTokenDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RefreshTokenDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.RefreshTokenDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RefreshTokenDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.RefreshTokenDTO"
               }
             }
           }
@@ -159,6 +163,7 @@
         "tags": [
           "Clientes"
         ],
+        "operationId": "api/Clientes",
         "responses": {
           "200": {
             "description": "OK",
@@ -167,7 +172,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ClienteResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                   }
                 }
               },
@@ -175,7 +180,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ClienteResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                   }
                 }
               },
@@ -183,7 +188,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ClienteResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                   }
                 }
               }
@@ -195,26 +200,27 @@
         "tags": [
           "Clientes"
         ],
+        "operationId": "api/Clientes",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteCreateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteCreateDTO"
               }
             }
           }
@@ -225,17 +231,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ClienteResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ClienteResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ClienteResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                 }
               }
             }
@@ -248,6 +254,7 @@
         "tags": [
           "Clientes"
         ],
+        "operationId": "api/Clientes/{id}",
         "parameters": [
           {
             "name": "id",
@@ -265,17 +272,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ClienteResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ClienteResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ClienteResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                 }
               }
             }
@@ -286,6 +293,7 @@
         "tags": [
           "Clientes"
         ],
+        "operationId": "api/Clientes/{id}",
         "parameters": [
           {
             "name": "id",
@@ -301,22 +309,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteUpdateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteUpdateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteUpdateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteUpdateDTO"
               }
             }
           }
@@ -327,17 +335,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ClienteResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ClienteResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ClienteResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ClienteResponseDTO"
                 }
               }
             }
@@ -348,6 +356,7 @@
         "tags": [
           "Clientes"
         ],
+        "operationId": "api/Clientes/{id}",
         "parameters": [
           {
             "name": "id",
@@ -371,26 +380,27 @@
         "tags": [
           "Comparador"
         ],
+        "operationId": "api/Comparador/comparar",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/ComparacionRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.Controllers.ComparacionRequest"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ComparacionRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.Controllers.ComparacionRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ComparacionRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.Controllers.ComparacionRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ComparacionRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.Controllers.ComparacionRequest"
               }
             }
           }
@@ -407,6 +417,7 @@
         "tags": [
           "Comparador"
         ],
+        "operationId": "api/Comparador/historial",
         "responses": {
           "200": {
             "description": "OK"
@@ -419,6 +430,7 @@
         "tags": [
           "Comparador"
         ],
+        "operationId": "api/Comparador/historial/todos",
         "responses": {
           "200": {
             "description": "OK"
@@ -431,6 +443,7 @@
         "tags": [
           "Envios"
         ],
+        "operationId": "api/Envios/{pedidoId}",
         "parameters": [
           {
             "name": "pedidoId",
@@ -454,26 +467,27 @@
         "tags": [
           "Envios"
         ],
+        "operationId": "api/Envios",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             }
           }
@@ -490,6 +504,7 @@
         "tags": [
           "Envios"
         ],
+        "operationId": "api/Envios/{envioId}/estado",
         "parameters": [
           {
             "name": "envioId",
@@ -532,31 +547,45 @@
         }
       }
     },
+    "/health": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
+        "operationId": "health",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Logistica/envios": {
       "post": {
         "tags": [
           "Logistica"
         ],
+        "operationId": "api/Logistica/envios",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             }
           }
@@ -567,17 +596,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ShipitResponseApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[Ferremas.Api.Services.ShipitResponse, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ShipitResponseApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[Ferremas.Api.Services.ShipitResponse, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ShipitResponseApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[Ferremas.Api.Services.ShipitResponse, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
                 }
               }
             }
@@ -590,6 +619,7 @@
         "tags": [
           "MercadoLibre"
         ],
+        "operationId": "api/mercadolibre/test",
         "responses": {
           "200": {
             "description": "OK"
@@ -602,6 +632,7 @@
         "tags": [
           "MercadoLibre"
         ],
+        "operationId": "api/mercadolibre/buscar",
         "parameters": [
           {
             "name": "query",
@@ -623,6 +654,7 @@
         "tags": [
           "MercadoLibre"
         ],
+        "operationId": "api/mercadolibre/comparar",
         "parameters": [
           {
             "name": "nombreProducto",
@@ -652,6 +684,7 @@
         "tags": [
           "MercadoLibre"
         ],
+        "operationId": "api/mercadolibre/detalle/{itemId}",
         "parameters": [
           {
             "name": "itemId",
@@ -674,6 +707,7 @@
         "tags": [
           "MercadoLibre"
         ],
+        "operationId": "api/mercadolibre/sugerencias",
         "responses": {
           "200": {
             "description": "OK"
@@ -686,6 +720,7 @@
         "tags": [
           "MercadoLibre"
         ],
+        "operationId": "api/mercadolibre/estadisticas",
         "responses": {
           "200": {
             "description": "OK"
@@ -698,23 +733,24 @@
         "tags": [
           "Pagos"
         ],
+        "operationId": "api/Pagos",
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagoIEnumerableApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Ferremas.Api.Models.Pago, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagoIEnumerableApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Ferremas.Api.Models.Pago, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagoIEnumerableApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Ferremas.Api.Models.Pago, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
                 }
               }
             }
@@ -724,17 +760,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -747,6 +783,7 @@
         "tags": [
           "Pagos"
         ],
+        "operationId": "api/Pagos/{id}",
         "parameters": [
           {
             "name": "id",
@@ -764,17 +801,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagoApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[Ferremas.Api.Models.Pago, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagoApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[Ferremas.Api.Models.Pago, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagoApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[Ferremas.Api.Models.Pago, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
                 }
               }
             }
@@ -784,17 +821,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -804,17 +841,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -825,6 +862,7 @@
         "tags": [
           "Pagos"
         ],
+        "operationId": "api/Pagos/{id}",
         "parameters": [
           {
             "name": "id",
@@ -842,17 +880,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -862,17 +900,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -882,17 +920,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -905,6 +943,7 @@
         "tags": [
           "Pagos"
         ],
+        "operationId": "api/Pagos/procesar/{pedidoId}",
         "parameters": [
           {
             "name": "pedidoId",
@@ -920,22 +959,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProcesarPagoRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProcesarPagoRequest"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProcesarPagoRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProcesarPagoRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProcesarPagoRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProcesarPagoRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProcesarPagoRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProcesarPagoRequest"
               }
             }
           }
@@ -946,17 +985,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ObjectApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ObjectApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ObjectApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
                 }
               }
             }
@@ -966,17 +1005,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -986,17 +1025,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -1009,26 +1048,27 @@
         "tags": [
           "Pagos"
         ],
+        "operationId": "api/Pagos/webhook",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/MercadoPagoWebhookRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.Models.MercadoPagoWebhookRequest"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MercadoPagoWebhookRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.Models.MercadoPagoWebhookRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/MercadoPagoWebhookRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.Models.MercadoPagoWebhookRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/MercadoPagoWebhookRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.Models.MercadoPagoWebhookRequest"
               }
             }
           }
@@ -1039,17 +1079,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -1059,17 +1099,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ApiResponse"
                 }
               }
             }
@@ -1082,26 +1122,27 @@
         "tags": [
           "Pagos"
         ],
+        "operationId": "api/Pagos/preferencia",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProcesarPagoRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProcesarPagoRequest"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProcesarPagoRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProcesarPagoRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProcesarPagoRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProcesarPagoRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProcesarPagoRequest"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProcesarPagoRequest"
               }
             }
           }
@@ -1118,6 +1159,7 @@
         "tags": [
           "Pedidos"
         ],
+        "operationId": "api/Pedidos",
         "responses": {
           "200": {
             "description": "OK",
@@ -1126,7 +1168,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/PedidoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                   }
                 }
               },
@@ -1134,7 +1176,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/PedidoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                   }
                 }
               },
@@ -1142,7 +1184,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/PedidoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                   }
                 }
               }
@@ -1154,26 +1196,27 @@
         "tags": [
           "Pedidos"
         ],
+        "operationId": "api/Pedidos",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/PedidoCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoCreateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PedidoCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/PedidoCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/PedidoCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoCreateDTO"
               }
             }
           }
@@ -1184,17 +1227,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PedidoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PedidoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PedidoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                 }
               }
             }
@@ -1207,6 +1250,7 @@
         "tags": [
           "Pedidos"
         ],
+        "operationId": "api/Pedidos/mis",
         "responses": {
           "200": {
             "description": "OK",
@@ -1215,7 +1259,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/PedidoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                   }
                 }
               },
@@ -1223,7 +1267,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/PedidoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                   }
                 }
               },
@@ -1231,7 +1275,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/PedidoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                   }
                 }
               }
@@ -1245,6 +1289,7 @@
         "tags": [
           "Pedidos"
         ],
+        "operationId": "api/Pedidos/{id}",
         "parameters": [
           {
             "name": "id",
@@ -1262,17 +1307,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PedidoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PedidoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PedidoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                 }
               }
             }
@@ -1283,6 +1328,7 @@
         "tags": [
           "Pedidos"
         ],
+        "operationId": "api/Pedidos/{id}",
         "parameters": [
           {
             "name": "id",
@@ -1306,6 +1352,7 @@
         "tags": [
           "Pedidos"
         ],
+        "operationId": "api/Pedidos/{id}/estado",
         "parameters": [
           {
             "name": "id",
@@ -1321,22 +1368,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/PedidoUpdateEstadoDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoUpdateEstadoDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PedidoUpdateEstadoDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoUpdateEstadoDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/PedidoUpdateEstadoDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoUpdateEstadoDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/PedidoUpdateEstadoDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoUpdateEstadoDTO"
               }
             }
           }
@@ -1353,6 +1400,7 @@
         "tags": [
           "Pedidos"
         ],
+        "operationId": "api/Pedidos/usuario/{usuarioId}",
         "parameters": [
           {
             "name": "usuarioId",
@@ -1372,7 +1420,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/PedidoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                   }
                 }
               },
@@ -1380,7 +1428,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/PedidoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                   }
                 }
               },
@@ -1388,7 +1436,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/PedidoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.PedidoResponseDTO"
                   }
                 }
               }
@@ -1402,6 +1450,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos",
         "responses": {
           "200": {
             "description": "OK",
@@ -1410,7 +1459,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1418,7 +1467,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1426,7 +1475,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               }
@@ -1438,26 +1487,27 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductoCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoCreateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductoCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductoCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductoCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoCreateDTO"
               }
             }
           }
@@ -1468,17 +1518,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               }
             }
@@ -1491,6 +1541,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/{id}",
         "parameters": [
           {
             "name": "id",
@@ -1508,17 +1559,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               }
             }
@@ -1529,6 +1580,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/{id}",
         "parameters": [
           {
             "name": "id",
@@ -1544,22 +1596,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductoUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoUpdateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductoUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoUpdateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductoUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoUpdateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductoUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoUpdateDTO"
               }
             }
           }
@@ -1570,17 +1622,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               }
             }
@@ -1591,6 +1643,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/{id}",
         "parameters": [
           {
             "name": "id",
@@ -1614,6 +1667,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/categoria/{categoriaId}",
         "parameters": [
           {
             "name": "categoriaId",
@@ -1633,7 +1687,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1641,7 +1695,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1649,7 +1703,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               }
@@ -1663,6 +1717,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/marca/{marcaId}",
         "parameters": [
           {
             "name": "marcaId",
@@ -1682,7 +1737,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1690,7 +1745,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1698,7 +1753,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               }
@@ -1712,6 +1767,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/search",
         "parameters": [
           {
             "name": "termino",
@@ -1729,7 +1785,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1737,7 +1793,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1745,7 +1801,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               }
@@ -1759,6 +1815,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/filtrar",
         "parameters": [
           {
             "name": "page",
@@ -1826,7 +1883,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1834,7 +1891,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1842,7 +1899,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               }
@@ -1856,6 +1913,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/{id}/stock",
         "parameters": [
           {
             "name": "id",
@@ -1901,17 +1959,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductoResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                 }
               }
             }
@@ -1924,6 +1982,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/activos",
         "responses": {
           "200": {
             "description": "OK",
@@ -1932,7 +1991,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1940,7 +1999,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               },
@@ -1948,7 +2007,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ProductoResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.ProductoResponseDTO"
                   }
                 }
               }
@@ -1962,6 +2021,7 @@
         "tags": [
           "Productos"
         ],
+        "operationId": "api/Productos/publico/whatsapp-link",
         "parameters": [
           {
             "name": "telefono",
@@ -1990,6 +2050,7 @@
         "tags": [
           "Reportes"
         ],
+        "operationId": "api/reportes/ventas",
         "parameters": [
           {
             "name": "desde",
@@ -2020,6 +2081,7 @@
         "tags": [
           "Reportes"
         ],
+        "operationId": "api/reportes/envios",
         "parameters": [
           {
             "name": "desde",
@@ -2050,26 +2112,27 @@
         "tags": [
           "Test"
         ],
+        "operationId": "api/Test/test-envio",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/EnvioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.EnvioCreateDTO"
               }
             }
           }
@@ -2086,6 +2149,7 @@
         "tags": [
           "Usuarios"
         ],
+        "operationId": "api/Usuarios",
         "responses": {
           "200": {
             "description": "OK",
@@ -2094,7 +2158,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/UsuarioResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                   }
                 }
               },
@@ -2102,7 +2166,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/UsuarioResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                   }
                 }
               },
@@ -2110,7 +2174,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/UsuarioResponseDTO"
+                    "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                   }
                 }
               }
@@ -2122,26 +2186,27 @@
         "tags": [
           "Usuarios"
         ],
+        "operationId": "api/Usuarios",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioCreateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioCreateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioCreateDTO"
               }
             }
           }
@@ -2152,17 +2217,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsuarioResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsuarioResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsuarioResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                 }
               }
             }
@@ -2175,23 +2240,24 @@
         "tags": [
           "Usuarios"
         ],
+        "operationId": "api/Usuarios/perfil",
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsuarioResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsuarioResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsuarioResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                 }
               }
             }
@@ -2202,26 +2268,27 @@
         "tags": [
           "Usuarios"
         ],
+        "operationId": "api/Usuarios/perfil",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioUpdateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioUpdateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioUpdateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioUpdateDTO"
               }
             }
           }
@@ -2238,6 +2305,7 @@
         "tags": [
           "Usuarios"
         ],
+        "operationId": "api/Usuarios/{id}",
         "parameters": [
           {
             "name": "id",
@@ -2255,17 +2323,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsuarioResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsuarioResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsuarioResponseDTO"
+                  "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioResponseDTO"
                 }
               }
             }
@@ -2276,6 +2344,7 @@
         "tags": [
           "Usuarios"
         ],
+        "operationId": "api/Usuarios/{id}",
         "parameters": [
           {
             "name": "id",
@@ -2291,22 +2360,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioUpdateDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioUpdateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioUpdateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioUpdateDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.UsuarioUpdateDTO"
               }
             }
           }
@@ -2321,6 +2390,7 @@
         "tags": [
           "Usuarios"
         ],
+        "operationId": "api/Usuarios/{id}",
         "parameters": [
           {
             "name": "id",
@@ -2344,26 +2414,27 @@
         "tags": [
           "Usuarios"
         ],
+        "operationId": "api/Usuarios/login",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.LoginDTO"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.LoginDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.LoginDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDTO"
+                "$ref": "#/components/schemas/Ferremas.Api.DTOs.LoginDTO"
               }
             }
           }
@@ -2397,6 +2468,7 @@
         "tags": [
           "Usuarios"
         ],
+        "operationId": "api/Usuarios/reactivar/{id}",
         "parameters": [
           {
             "name": "id",
@@ -2418,7 +2490,28 @@
   },
   "components": {
     "schemas": {
-      "ApiResponse": {
+      "Ferremas.Api.Controllers.ComparacionRequest": {
+        "required": [
+          "producto"
+        ],
+        "type": "object",
+        "properties": {
+          "producto": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "marca": {
+            "type": "string",
+            "nullable": true
+          },
+          "precioFerremas": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.DTOs.ApiResponse": {
         "type": "object",
         "properties": {
           "exito": {
@@ -2435,71 +2528,155 @@
         },
         "additionalProperties": false
       },
-      "Categoria": {
-        "required": [
-          "nombre"
-        ],
+      "Ferremas.Api.DTOs.ApiResponse`1[[Ferremas.Api.Models.Pago, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nombre": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "descripcion": {
-            "maxLength": 500,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "categoriaPadreId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "codigo": {
-            "maxLength": 10,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "activo": {
+          "exito": {
             "type": "boolean"
           },
-          "fechaCreacion": {
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          },
+          "datos": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.Pago"
+          },
+          "fechaHora": {
             "type": "string",
             "format": "date-time"
           },
-          "fechaModificacion": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "categoriaPadre": {
-            "$ref": "#/components/schemas/Categoria"
-          },
-          "subcategorias": {
+          "errores": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Categoria"
+              "type": "string"
             },
             "nullable": true
           },
-          "productos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Producto"
-            },
+          "metadatos": {
+            "type": "object",
+            "additionalProperties": { },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "ClienteCreateDTO": {
+      "Ferremas.Api.DTOs.ApiResponse`1[[Ferremas.Api.Services.ShipitResponse, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "exito": {
+            "type": "boolean"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          },
+          "datos": {
+            "$ref": "#/components/schemas/Ferremas.Api.Services.ShipitResponse"
+          },
+          "fechaHora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "errores": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "metadatos": {
+            "type": "object",
+            "additionalProperties": { },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.DTOs.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Ferremas.Api.Models.Pago, FerremasBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "exito": {
+            "type": "boolean"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ferremas.Api.Models.Pago"
+            },
+            "nullable": true
+          },
+          "fechaHora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "errores": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "metadatos": {
+            "type": "object",
+            "additionalProperties": { },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.DTOs.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "exito": {
+            "type": "boolean"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          },
+          "datos": {
+            "nullable": true
+          },
+          "fechaHora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "errores": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "metadatos": {
+            "type": "object",
+            "additionalProperties": { },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.DTOs.ClienteCreateDTO": {
         "required": [
           "apellido",
           "correoElectronico",
@@ -2539,13 +2716,13 @@
           "direcciones": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/DireccionDTO"
+              "$ref": "#/components/schemas/Ferremas.Api.DTOs.DireccionDTO"
             }
           }
         },
         "additionalProperties": false
       },
-      "ClienteResponseDTO": {
+      "Ferremas.Api.DTOs.ClienteResponseDTO": {
         "required": [
           "apellido",
           "correoElectronico",
@@ -2598,14 +2775,14 @@
           "direcciones": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/DireccionDTO"
+              "$ref": "#/components/schemas/Ferremas.Api.DTOs.DireccionDTO"
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "ClienteUpdateDTO": {
+      "Ferremas.Api.DTOs.ClienteUpdateDTO": {
         "type": "object",
         "properties": {
           "nombre": {
@@ -2642,75 +2819,7 @@
         },
         "additionalProperties": false
       },
-      "ComparacionRequest": {
-        "required": [
-          "producto"
-        ],
-        "type": "object",
-        "properties": {
-          "producto": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "marca": {
-            "type": "string",
-            "nullable": true
-          },
-          "precioFerremas": {
-            "type": "number",
-            "format": "double"
-          }
-        },
-        "additionalProperties": false
-      },
-      "DetallePedido": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "pedidoId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "productoId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "cantidad": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "precioUnitario": {
-            "type": "number",
-            "format": "double",
-            "nullable": true
-          },
-          "subtotal": {
-            "type": "number",
-            "format": "double",
-            "nullable": true
-          },
-          "observaciones": {
-            "maxLength": 255,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "pedido": {
-            "$ref": "#/components/schemas/Pedido"
-          },
-          "producto": {
-            "$ref": "#/components/schemas/Producto"
-          }
-        },
-        "additionalProperties": false
-      },
-      "DetallePedidoCreateDTO": {
+      "Ferremas.Api.DTOs.DetallePedidoCreateDTO": {
         "required": [
           "cantidad",
           "productoId"
@@ -2738,7 +2847,7 @@
         },
         "additionalProperties": false
       },
-      "DetallePedidoResponseDTO": {
+      "Ferremas.Api.DTOs.DetallePedidoResponseDTO": {
         "type": "object",
         "properties": {
           "id": {
@@ -2772,75 +2881,7 @@
         },
         "additionalProperties": false
       },
-      "Direccion": {
-        "required": [
-          "calle",
-          "codigoPostal",
-          "comuna",
-          "departamento",
-          "numero",
-          "region"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "usuarioId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "calle": {
-            "maxLength": 200,
-            "minLength": 0,
-            "type": "string"
-          },
-          "numero": {
-            "maxLength": 20,
-            "minLength": 0,
-            "type": "string"
-          },
-          "departamento": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "comuna": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "region": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "codigoPostal": {
-            "maxLength": 10,
-            "minLength": 0,
-            "type": "string"
-          },
-          "esPrincipal": {
-            "type": "boolean"
-          },
-          "fechaCreacion": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "fechaModificacion": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "usuario": {
-            "$ref": "#/components/schemas/Usuario"
-          }
-        },
-        "additionalProperties": false
-      },
-      "DireccionDTO": {
+      "Ferremas.Api.DTOs.DireccionDTO": {
         "required": [
           "calle",
           "codigoPostal",
@@ -2896,7 +2937,7 @@
         },
         "additionalProperties": false
       },
-      "EnvioCreateDTO": {
+      "Ferremas.Api.DTOs.EnvioCreateDTO": {
         "required": [
           "comunaDestino",
           "direccionDestino",
@@ -2943,7 +2984,7 @@
         },
         "additionalProperties": false
       },
-      "LoginDTO": {
+      "Ferremas.Api.DTOs.LoginDTO": {
         "required": [
           "email",
           "password"
@@ -2962,339 +3003,7 @@
         },
         "additionalProperties": false
       },
-      "Marca": {
-        "required": [
-          "nombre"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nombre": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "descripcion": {
-            "type": "string",
-            "nullable": true
-          },
-          "logoUrl": {
-            "maxLength": 255,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "activo": {
-            "type": "boolean"
-          },
-          "productos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Producto"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "MercadoPagoWebhookRequest": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
-          },
-          "live_mode": {
-            "type": "boolean"
-          },
-          "type": {
-            "type": "string",
-            "nullable": true
-          },
-          "date_created": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "application_id": {
-            "type": "string",
-            "nullable": true
-          },
-          "user_id": {
-            "type": "string",
-            "nullable": true
-          },
-          "version": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "api_version": {
-            "type": "string",
-            "nullable": true
-          },
-          "action": {
-            "type": "string",
-            "nullable": true
-          },
-          "data": {
-            "$ref": "#/components/schemas/WebhookData"
-          },
-          "status": {
-            "type": "string",
-            "nullable": true
-          },
-          "external_reference": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ObjectApiResponse": {
-        "type": "object",
-        "properties": {
-          "exito": {
-            "type": "boolean"
-          },
-          "mensaje": {
-            "type": "string",
-            "nullable": true
-          },
-          "error": {
-            "type": "string",
-            "nullable": true
-          },
-          "datos": {
-            "nullable": true
-          },
-          "fechaHora": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "errores": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "metadatos": {
-            "type": "object",
-            "additionalProperties": { },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Pago": {
-        "required": [
-          "estado",
-          "fechaPago",
-          "metodoPago",
-          "monto",
-          "pedidoId"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "pedidoId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "monto": {
-            "type": "number",
-            "format": "double"
-          },
-          "metodoPago": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string"
-          },
-          "transaccionId": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "tokenPasarela": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "datosRespuesta": {
-            "type": "string",
-            "nullable": true
-          },
-          "fechaPago": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "estado": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "pedido": {
-            "$ref": "#/components/schemas/Pedido"
-          }
-        },
-        "additionalProperties": false
-      },
-      "PagoApiResponse": {
-        "type": "object",
-        "properties": {
-          "exito": {
-            "type": "boolean"
-          },
-          "mensaje": {
-            "type": "string",
-            "nullable": true
-          },
-          "error": {
-            "type": "string",
-            "nullable": true
-          },
-          "datos": {
-            "$ref": "#/components/schemas/Pago"
-          },
-          "fechaHora": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "errores": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "metadatos": {
-            "type": "object",
-            "additionalProperties": { },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "PagoIEnumerableApiResponse": {
-        "type": "object",
-        "properties": {
-          "exito": {
-            "type": "boolean"
-          },
-          "mensaje": {
-            "type": "string",
-            "nullable": true
-          },
-          "error": {
-            "type": "string",
-            "nullable": true
-          },
-          "datos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Pago"
-            },
-            "nullable": true
-          },
-          "fechaHora": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "errores": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "metadatos": {
-            "type": "object",
-            "additionalProperties": { },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Pedido": {
-        "required": [
-          "fechaCreacion"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "usuarioId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "fechaPedido": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "estado": {
-            "maxLength": 20,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "fechaCreacion": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "fechaModificacion": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "activo": {
-            "type": "boolean"
-          },
-          "repartidorId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "total": {
-            "type": "number",
-            "format": "double",
-            "nullable": true
-          },
-          "observaciones": {
-            "maxLength": 500,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "direccionEntrega": {
-            "maxLength": 200,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "usuario": {
-            "$ref": "#/components/schemas/Usuario"
-          },
-          "detalles": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DetallePedido"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "PedidoCreateDTO": {
+      "Ferremas.Api.DTOs.PedidoCreateDTO": {
         "required": [
           "estado",
           "total",
@@ -3325,14 +3034,14 @@
           "detalles": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/DetallePedidoCreateDTO"
+              "$ref": "#/components/schemas/Ferremas.Api.DTOs.DetallePedidoCreateDTO"
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "PedidoResponseDTO": {
+      "Ferremas.Api.DTOs.PedidoResponseDTO": {
         "type": "object",
         "properties": {
           "id": {
@@ -3382,14 +3091,14 @@
           "detalles": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/DetallePedidoResponseDTO"
+              "$ref": "#/components/schemas/Ferremas.Api.DTOs.DetallePedidoResponseDTO"
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "PedidoUpdateEstadoDTO": {
+      "Ferremas.Api.DTOs.PedidoUpdateEstadoDTO": {
         "required": [
           "estado"
         ],
@@ -3402,7 +3111,7 @@
         },
         "additionalProperties": false
       },
-      "ProcesarPagoRequest": {
+      "Ferremas.Api.DTOs.ProcesarPagoRequest": {
         "required": [
           "metodoPago",
           "monto"
@@ -3432,92 +3141,7 @@
         },
         "additionalProperties": false
       },
-      "Producto": {
-        "required": [
-          "codigo",
-          "fechaCreacion",
-          "nombre",
-          "precio"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "codigo": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string"
-          },
-          "nombre": {
-            "maxLength": 150,
-            "minLength": 0,
-            "type": "string"
-          },
-          "descripcion": {
-            "type": "string",
-            "nullable": true
-          },
-          "precio": {
-            "type": "number",
-            "format": "double"
-          },
-          "stock": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "imagenUrl": {
-            "maxLength": 200,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "especificaciones": {
-            "maxLength": 1000,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "fechaCreacion": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "fechaModificacion": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "activo": {
-            "type": "boolean"
-          },
-          "categoriaId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "marcaId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "categoria": {
-            "$ref": "#/components/schemas/Categoria"
-          },
-          "marca": {
-            "$ref": "#/components/schemas/Marca"
-          },
-          "detallesPedido": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DetallePedido"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProductoCreateDTO": {
+      "Ferremas.Api.DTOs.ProductoCreateDTO": {
         "required": [
           "codigo",
           "descripcion",
@@ -3564,7 +3188,7 @@
         },
         "additionalProperties": false
       },
-      "ProductoResponseDTO": {
+      "Ferremas.Api.DTOs.ProductoResponseDTO": {
         "required": [
           "codigo",
           "descripcion",
@@ -3635,7 +3259,7 @@
         },
         "additionalProperties": false
       },
-      "ProductoUpdateDTO": {
+      "Ferremas.Api.DTOs.ProductoUpdateDTO": {
         "type": "object",
         "properties": {
           "codigo": {
@@ -3681,7 +3305,7 @@
         },
         "additionalProperties": false
       },
-      "RefreshTokenDTO": {
+      "Ferremas.Api.DTOs.RefreshTokenDTO": {
         "required": [
           "refreshToken",
           "token"
@@ -3699,7 +3323,7 @@
         },
         "additionalProperties": false
       },
-      "ResetPasswordDTO": {
+      "Ferremas.Api.DTOs.ResetPasswordDTO": {
         "required": [
           "confirmPassword",
           "email",
@@ -3724,48 +3348,63 @@
         },
         "additionalProperties": false
       },
-      "ShipitAddress": {
+      "Ferremas.Api.DTOs.UsuarioCreateDTO": {
+        "required": [
+          "email",
+          "nombre",
+          "password"
+        ],
         "type": "object",
         "properties": {
-          "commune": {
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "apellido": {
             "type": "string",
             "nullable": true
           },
-          "street": {
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "rut": {
             "type": "string",
             "nullable": true
           },
-          "number": {
+          "telefono": {
             "type": "string",
             "nullable": true
           },
-          "complement": {
+          "rol": {
             "type": "string",
+            "nullable": true
+          },
+          "fechaRegistro": {
+            "type": "string",
+            "format": "date-time",
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "ShipitResponse": {
+      "Ferremas.Api.DTOs.UsuarioResponseDTO": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
             "format": "int32"
           },
-          "tracking_number": {
+          "nombre": {
             "type": "string",
             "nullable": true
           },
-          "status": {
-            "type": "string",
-            "nullable": true
-          },
-          "reference": {
-            "type": "string",
-            "nullable": true
-          },
-          "full_name": {
+          "apellido": {
             "type": "string",
             "nullable": true
           },
@@ -3773,53 +3412,576 @@
             "type": "string",
             "nullable": true
           },
-          "cellphone": {
+          "rut": {
             "type": "string",
             "nullable": true
           },
-          "address": {
-            "$ref": "#/components/schemas/ShipitAddress"
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "rol": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "fechaRegistro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "direcciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ferremas.Api.DTOs.DireccionDTO"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "ShipitResponseApiResponse": {
+      "Ferremas.Api.DTOs.UsuarioUpdateDTO": {
+        "required": [
+          "email",
+          "nombre"
+        ],
         "type": "object",
         "properties": {
-          "exito": {
+          "nombre": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "apellido": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "rol": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "format": "email"
+          },
+          "fechaRegistro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "rut": {
+            "type": "string",
+            "nullable": true
+          },
+          "ultimoAcceso": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.Models.Categoria": {
+        "required": [
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "descripcion": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "categoriaPadreId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "codigo": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
             "type": "boolean"
           },
-          "mensaje": {
-            "type": "string",
-            "nullable": true
-          },
-          "error": {
-            "type": "string",
-            "nullable": true
-          },
-          "datos": {
-            "$ref": "#/components/schemas/ShipitResponse"
-          },
-          "fechaHora": {
+          "fechaCreacion": {
             "type": "string",
             "format": "date-time"
           },
-          "errores": {
+          "fechaModificacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "categoriaPadre": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.Categoria"
+          },
+          "subcategorias": {
             "type": "array",
             "items": {
-              "type": "string"
+              "$ref": "#/components/schemas/Ferremas.Api.Models.Categoria"
             },
             "nullable": true
           },
-          "metadatos": {
-            "type": "object",
-            "additionalProperties": { },
+          "productos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ferremas.Api.Models.Producto"
+            },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Usuario": {
+      "Ferremas.Api.Models.DetallePedido": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pedidoId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "productoId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cantidad": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "precioUnitario": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "subtotal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "observaciones": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "pedido": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.Pedido"
+          },
+          "producto": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.Producto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.Models.Direccion": {
+        "required": [
+          "calle",
+          "codigoPostal",
+          "comuna",
+          "departamento",
+          "numero",
+          "region"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "calle": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "numero": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "departamento": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "comuna": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "region": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "codigoPostal": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "esPrincipal": {
+            "type": "boolean"
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaModificacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.Usuario"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.Models.Marca": {
+        "required": [
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "logoUrl": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "productos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ferremas.Api.Models.Producto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.Models.MercadoPagoWebhookRequest": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "live_mode": {
+            "type": "boolean"
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "date_created": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "application_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "api_version": {
+            "type": "string",
+            "nullable": true
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.WebhookData"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "external_reference": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.Models.Pago": {
+        "required": [
+          "estado",
+          "fechaPago",
+          "metodoPago",
+          "monto",
+          "pedidoId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pedidoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "metodoPago": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "transaccionId": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "tokenPasarela": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "datosRespuesta": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaPago": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "estado": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "pedido": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.Pedido"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.Models.Pedido": {
+        "required": [
+          "fechaCreacion"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fechaPedido": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "estado": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaModificacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "repartidorId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "total": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "observaciones": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "direccionEntrega": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.Usuario"
+          },
+          "detalles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ferremas.Api.Models.DetallePedido"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.Models.Producto": {
+        "required": [
+          "codigo",
+          "fechaCreacion",
+          "nombre",
+          "precio"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "nombre": {
+            "maxLength": 150,
+            "minLength": 0,
+            "type": "string"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "precio": {
+            "type": "number",
+            "format": "double"
+          },
+          "stock": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imagenUrl": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "especificaciones": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaModificacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "categoriaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "marcaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "categoria": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.Categoria"
+          },
+          "marca": {
+            "$ref": "#/components/schemas/Ferremas.Api.Models.Marca"
+          },
+          "detallesPedido": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ferremas.Api.Models.DetallePedido"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.Models.Usuario": {
         "required": [
           "email",
           "nombre",
@@ -3888,77 +4050,72 @@
           "pedidos": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Pedido"
+              "$ref": "#/components/schemas/Ferremas.Api.Models.Pedido"
             },
             "nullable": true
           },
           "direcciones": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Direccion"
+              "$ref": "#/components/schemas/Ferremas.Api.Models.Direccion"
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "UsuarioCreateDTO": {
-        "required": [
-          "email",
-          "nombre",
-          "password"
-        ],
+      "Ferremas.Api.Models.WebhookData": {
         "type": "object",
         "properties": {
-          "nombre": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "apellido": {
+          "id": {
             "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "minLength": 1,
-            "type": "string",
-            "format": "email"
-          },
-          "password": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "rut": {
-            "type": "string",
-            "nullable": true
-          },
-          "telefono": {
-            "type": "string",
-            "nullable": true
-          },
-          "rol": {
-            "type": "string",
-            "nullable": true
-          },
-          "fechaRegistro": {
-            "type": "string",
-            "format": "date-time",
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "UsuarioResponseDTO": {
+      "Ferremas.Api.Services.ShipitAddress": {
+        "type": "object",
+        "properties": {
+          "commune": {
+            "type": "string",
+            "nullable": true
+          },
+          "street": {
+            "type": "string",
+            "nullable": true
+          },
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "complement": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ferremas.Api.Services.ShipitResponse": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
             "format": "int32"
           },
-          "nombre": {
+          "tracking_number": {
             "type": "string",
             "nullable": true
           },
-          "apellido": {
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "reference": {
+            "type": "string",
+            "nullable": true
+          },
+          "full_name": {
             "type": "string",
             "nullable": true
           },
@@ -3966,97 +4123,12 @@
             "type": "string",
             "nullable": true
           },
-          "rut": {
+          "cellphone": {
             "type": "string",
             "nullable": true
           },
-          "telefono": {
-            "type": "string",
-            "nullable": true
-          },
-          "rol": {
-            "type": "string",
-            "nullable": true
-          },
-          "activo": {
-            "type": "boolean"
-          },
-          "fechaRegistro": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "direcciones": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DireccionDTO"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UsuarioUpdateDTO": {
-        "required": [
-          "email",
-          "nombre"
-        ],
-        "type": "object",
-        "properties": {
-          "nombre": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "apellido": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "telefono": {
-            "maxLength": 20,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "rol": {
-            "type": "string",
-            "nullable": true
-          },
-          "activo": {
-            "type": "boolean",
-            "nullable": true
-          },
-          "email": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string",
-            "format": "email"
-          },
-          "fechaRegistro": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "rut": {
-            "type": "string",
-            "nullable": true
-          },
-          "ultimoAcceso": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "WebhookData": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
+          "address": {
+            "$ref": "#/components/schemas/Ferremas.Api.Services.ShipitAddress"
           }
         },
         "additionalProperties": false

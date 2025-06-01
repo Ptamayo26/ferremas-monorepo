@@ -275,3 +275,4 @@ C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\refint\Ferrem
 C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\FerremasBackend.pdb
 C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\FerremasBackend.genruntimeconfig.cache
 C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\ref\FerremasBackend.dll
+C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\FerremasBackend.sourcelink.json
