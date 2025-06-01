@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "OtVD6iyj1dtnrkhC9vaTQgmHKWjWwqZY6aimI5zqQ5I=",
+  "Source": "FerremasBackend",
+  "BasePath": "_content/FerremasBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
