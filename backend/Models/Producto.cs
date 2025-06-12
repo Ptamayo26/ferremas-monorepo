@@ -31,6 +31,9 @@ namespace Ferremas.Api.Models
         [Column("stock")]
         public int Stock { get; set; }
         
+        [Column("stock_minimo")]
+        public int StockMinimo { get; set; } = 1;
+        
         [StringLength(200)]
         [Column("ImagenUrl")]
         public string ImagenUrl { get; set; } = "Sin imagen";

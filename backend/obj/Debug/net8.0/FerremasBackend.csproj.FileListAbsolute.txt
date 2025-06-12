@@ -268,7 +268,6 @@ C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\staticwebasse
 C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FerremasBackend.props
 C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FerremasBackend.props
 C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\Ferremas.368F970F.Up2Date
 C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\FerremasBackend.dll
 C:\Users\Paloma\Desktop\ferremas-momorepo\backend\obj\Debug\net8.0\refint\FerremasBackend.dll

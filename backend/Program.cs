@@ -114,6 +114,13 @@ builder.Services.AddHttpClient<MercadoPagoService>(client =>
 builder.Services.AddScoped<MercadoLibreService>();
 builder.Services.AddScoped<MercadoPagoService>();
 
+// Nuevos servicios para módulos adicionales
+builder.Services.AddScoped<IProveedoresService, ProveedoresService>();
+builder.Services.AddScoped<IFacturaService, FacturaService>();
+builder.Services.AddScoped<INotificacionesService, NotificacionesService>();
+builder.Services.AddScoped<IReportesService, ReportesService>();
+builder.Services.AddScoped<IDescuentoService, DescuentoService>();
+
 // Configuración de WhatsAppWebService
 builder.Services.AddScoped<WhatsAppWebService>();
 

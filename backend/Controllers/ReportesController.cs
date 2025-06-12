@@ -1,53 +1,42 @@
-using Microsoft.AspNetCore.Mvc;
+using Ferremas.Api.DTOs;
+using Ferremas.Api.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using System;
-using System.Linq;
-using Ferremas.Api.Data;
-using Ferremas.Api.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
-[ApiController]
-[Route("api/reportes")]
-[Authorize(Roles = "administrador")]
-public class ReportesController : ControllerBase
+namespace Ferremas.Api.Controllers
 {
-    private readonly AppDbContext _db;
-    public ReportesController(AppDbContext db) { _db = db; }
-
-    [HttpGet("ventas")]
-    public IActionResult Ventas([FromQuery] DateTime? desde, [FromQuery] DateTime? hasta)
+    [ApiController]
+    [Route("api/[controller]")]
+    [Authorize(Policy = "RequireAdministrador")]
+    public class ReportesController : ControllerBase
     {
-        var query = _db.Pedidos.AsQueryable();
-        if (desde.HasValue) query = query.Where(p => p.FechaCreacion >= desde);
-        if (hasta.HasValue) query = query.Where(p => p.FechaCreacion <= hasta);
-        var total = query.Sum(p => (decimal?)p.Total) ?? 0;
-        var cantidad = query.Count();
-        return Ok(new { 
-            descripcion = "Reporte de ventas que muestra el total monetario y cantidad de pedidos realizados",
-            periodo = new {
-                desde = desde?.ToString("yyyy-MM-dd HH:mm:ss") ?? "Todo el tiempo",
-                hasta = hasta?.ToString("yyyy-MM-dd HH:mm:ss") ?? "Todo el tiempo"
-            },
-            total = total,
-            cantidad = cantidad,
-            detalles = "El total representa la suma de todos los pedidos en el período, y la cantidad representa el número total de pedidos realizados"
-        });
-    }
+        private readonly IReportesService _reportesService;
 
-    [HttpGet("envios")]
-    public IActionResult Envios([FromQuery] DateTime? desde, [FromQuery] DateTime? hasta)
-    {
-        var query = _db.Envios.AsQueryable();
-        if (desde.HasValue) query = query.Where(e => e.FechaCreacion >= desde);
-        if (hasta.HasValue) query = query.Where(e => e.FechaCreacion <= hasta);
-        var cantidad = query.Count();
-        return Ok(new { 
-            descripcion = "Reporte de envíos que muestra la cantidad total de envíos realizados",
-            periodo = new {
-                desde = desde?.ToString("yyyy-MM-dd HH:mm:ss") ?? "Todo el tiempo",
-                hasta = hasta?.ToString("yyyy-MM-dd HH:mm:ss") ?? "Todo el tiempo"
-            },
-            cantidad = cantidad,
-            detalles = "La cantidad representa el número total de envíos realizados en el período especificado"
-        });
+        public ReportesController(IReportesService reportesService)
+        {
+            _reportesService = reportesService;
+        }
+
+        [HttpGet("ventas/mes/{mes}/{anio}")]
+        public async Task<ActionResult<decimal>> GetVentasTotalesMes(int mes, int anio)
+        {
+            var total = await _reportesService.ObtenerVentasTotalesMes(mes, anio);
+            return Ok(total);
+        }
+
+        [HttpGet("productos/top/{cantidad}")]
+        public async Task<ActionResult<List<ProductoVentaDTO>>> GetTopProductosVendidos(int cantidad)
+        {
+            var productos = await _reportesService.ObtenerTopProductosVendidos(cantidad);
+            return Ok(productos);
+        }
+
+        [HttpGet("inventario/bajo-stock")]
+        public async Task<ActionResult<List<ProductoDTO>>> GetProductosBajoStock()
+        {
+            var productos = await _reportesService.ObtenerProductosBajoStock();
+            return Ok(productos);
+        }
     }
 } 

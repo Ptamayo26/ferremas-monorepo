@@ -28,6 +28,10 @@ namespace Ferremas.Api.Data
         public DbSet<ConversionDivisa> ConversionDivisas { get; set; } = null!;
         public DbSet<Cliente> Clientes { get; set; } = null!;
         public DbSet<ComparacionHistorial> ComparacionesHistorial { get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; } = null!;
+        public DbSet<Factura> Facturas { get; set; } = null!;
+        public DbSet<Notificacion> Notificaciones { get; set; } = null!;
+        public DbSet<Descuento> Descuentos { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -239,6 +243,63 @@ namespace Ferremas.Api.Data
                 entity.Property(e => e.Mensaje).IsRequired().HasMaxLength(1000);
                 entity.Property(e => e.Excepcion).HasMaxLength(4000);
                 entity.Property(e => e.Fecha).IsRequired();
+            });
+
+            // Configuración de Proveedor
+            modelBuilder.Entity<Proveedor>(entity =>
+            {
+                entity.ToTable("proveedores");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Nombre).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Contacto).HasMaxLength(100);
+                entity.Property(e => e.Correo).HasMaxLength(100);
+                entity.Property(e => e.Telefono).HasMaxLength(20);
+                entity.Property(e => e.Direccion).HasMaxLength(200);
+                entity.Property(e => e.Activo).IsRequired();
+            });
+
+            // Configuración de Factura
+            modelBuilder.Entity<Factura>(entity =>
+            {
+                entity.ToTable("facturas");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.FechaEmision).IsRequired();
+                entity.Property(e => e.MontoTotal).HasColumnType("decimal(10,2)");
+                entity.Property(e => e.Anulada).IsRequired();
+                
+                entity.HasOne(f => f.Pedido)
+                    .WithMany()
+                    .HasForeignKey(f => f.PedidoId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            // Configuración de Notificacion
+            modelBuilder.Entity<Notificacion>(entity =>
+            {
+                entity.ToTable("notificaciones");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Mensaje).IsRequired().HasMaxLength(500);
+                entity.Property(e => e.Leida).IsRequired();
+                entity.Property(e => e.FechaCreacion).IsRequired();
+                
+                entity.HasOne(n => n.Usuario)
+                    .WithMany()
+                    .HasForeignKey(n => n.UsuarioId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Configuración de Descuento
+            modelBuilder.Entity<Descuento>(entity =>
+            {
+                entity.ToTable("descuentos");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Codigo).IsRequired().HasMaxLength(50);
+                entity.Property(e => e.Porcentaje).HasColumnType("decimal(5,2)");
+                entity.Property(e => e.FechaInicio).IsRequired();
+                entity.Property(e => e.FechaFin).IsRequired();
+                entity.Property(e => e.Activo).IsRequired();
+                
+                entity.HasIndex(e => e.Codigo).IsUnique();
             });
         }
     }
