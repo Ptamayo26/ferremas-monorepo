@@ -4,11 +4,11 @@ import { useAuth } from '../../contexts/AuthContext';
 
 export const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { estaAutenticado, cerrarSesion } = useAuth();
+  const { estaAutenticado, logout } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    cerrarSesion();
+    logout();
     navigate('/login');
   };
 
